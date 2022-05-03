@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/png" href="img/Angry-Sale.png" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <title>AngrySale</title>
+</head>
+
+<body>
+
+  <main>
+    <div class="imgs_container"></div>
+    <div>
+      <h1>New products every time</h1>
+      <p>Looking for electronics, jewelry or any other type of goods?
+        We have the best deal in the market!</p>
+    </div>
+
+
+    <h1 style="margin: 120px;">Limited-time deals</h1>
+    <div class="cards_container"></div>
+  </main>
+
+
+  <script src="main.js"></script>
+
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+
+  <script src="slick/slick.min.js"></script>
+
+  <script>
+
+    $('.imgs_container').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      centerMode: true,
+      variableWidth: true
+    });
+
+  </script>
+
+</body>
+
+</html>
