@@ -15,7 +15,7 @@
         url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
 }
 /* Arrows */
-.slick-prev,
+ .slick-prev,
 .slick-next {
     font-size: 0;
     line-height: 0;
@@ -38,6 +38,7 @@
     border: none;
     outline: none;
     background: transparent;
+    visibility: hidden;
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -97,7 +98,7 @@
 }
 [dir="rtl"] .slick-next:before {
     content: "←";
-}
+} 
 
 /* Dots */
 .slick-dotted.slick-slider {

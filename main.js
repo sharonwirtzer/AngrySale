@@ -32,10 +32,10 @@ imgs.forEach(function (img) {
         <div>
         <img src="${img.pictureUrl}">
         </div>
-        <div class="descriptionContainer" >
-        <h2 class="imgTitle" > ${img.title} 
-        <span class="imgDescription"> <br> ${img.description} </span> </h2>
-        <h3 class="imgPrice"> ${img.price} 
+        <div class="description_container" >
+        <h2> ${img.title} </h2>
+        <span class="img_description"> <br> ${img.description} </span> </h2>
+        <h3 class="img_price"> ${img.price} 
         <img class="arrow" src="img/arrow.png"></h3>
         </div>
       </secsion>
