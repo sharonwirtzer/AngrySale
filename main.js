@@ -2,21 +2,21 @@ const imgs = [
     {
         id: 5,
         title: "Picnic Tote Bag",
-        description: "Insulated cooler-4 colors",
+        description: "Insulated cooler - 4 colors",
         price: "$18.99",
         pictureUrl: "img/p1.png",
     },
     {
         id: 6,
         title: "Beach Hat",
-        description: "2-in-1 Pet Water Bottle and Bowl 2-in-1 Pet Water Bottle and Bowl",
+        description: "Insulated cooler - 4 colors",
         price: "$19.99",
         pictureUrl: "img/p2.png"
     },
     {
         id: 7,
         title: "Fairy Lights Hat",
-        description: "2-in-1 Pet Water Bottle and Bowl 2-in-1 Pet Water Bottle and Bowl",
+        description: "Insulated cooler - 4 colors",
         price: "$18.99",
         pictureUrl: "img/p3.png"
     }
@@ -33,10 +33,10 @@ imgs.forEach(function (img) {
         <img src="${img.pictureUrl}">
         </div>
         <div class="description_container" >
-        <h2> ${img.title} </h2>
-        <span class="img_description"> <br> ${img.description} </span> </h2>
+        <h1> ${img.title} </h1>
+        <h2>${img.description} </h2>
         <h3 class="img_price"> ${img.price} 
-        <img class="arrow" src="img/arrow.png"></h3>
+        <img src="img/arrow.png"></h3>
         </div>
       </secsion>
     `;

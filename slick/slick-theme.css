@@ -107,7 +107,7 @@
 
 .slick-dots {
     position: absolute;
-    bottom: -25px;
+    bottom: 24px;
 
     display: block;
 
@@ -172,6 +172,8 @@
     font-size: 11px;
     text-align: center;
 
+   
+
 
     color: #E8E8E8;
 
@@ -181,4 +183,8 @@
 .slick-dots li.slick-active button:before {
     opacity: 0.75;
     color: #c2252c;
+    border: 1px solid #C2252C;
+    border-radius: 100%;
+  
+
 }

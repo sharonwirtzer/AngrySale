@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
     background-color: #ffffff;
@@ -12,7 +14,7 @@ article {
     float: left;
 }
 
-article:not(:last-child){
+article:not(:last-child) {
     margin-right: 18px;
 }
 
@@ -45,30 +47,41 @@ secsion img {
     height: 148px;
     width: 294px;
     opacity: 0.9;
-    padding-top: 10px;
-    padding-left: 22px;
-    padding-left: 22px;
-    padding-bottom: 30px;
     position: absolute;
     bottom: 30px;
     margin-left: 602px;
 }
 
-.img_description {
-    font-size: 16px;
+.description_container h1 {
+    margin-left: 22px;
+    margin-right: auto;
+    width: 250px;
+    font-size: 28px;
+    margin-bottom: 0%;
+    margin-top: 10px;
+    font-weight: normal;
 }
 
-.img_price {
+.description_container h2 {
+    font-size: 16px;
+    margin-left: 22px;
+    margin-right: auto;
+    width: 222px;
+    margin-top: 0%;
+}
+
+.description_container h3 {
+    margin-left: 22px;
+    margin-right: auto;
     font-size: 20px;
     color: #c2252c;
 }
 
-.arrow {
+.description_container img {
     height: 11.64px;
     width: 15.2px;
-    position: absolute;
-    left: 250px;
-    bottom: 27px;
+    float: right;
+    margin-right: 26.39px;
 }
 
 .description {
@@ -82,6 +95,22 @@ secsion img {
     margin-left: 100px;
 }
 
+.description h1 {
+    font-size: 56px;
+    font-family: "Poppins", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 374px;
+}
+
+.description p {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 374px;
+}
+
 .shop_button {
     background-color: #c2252c;
     width: 374px;
@@ -89,16 +118,27 @@ secsion img {
     position: absolute;
     margin-left: 60px;
     bottom: 63.15px;
+    color: #f4f4f4;
+    font-size: 20px;
+    border: none;
+}
+
+.shop_button:hover {
+    padding: 10px;
+    box-shadow: 10px 10px #f3d3d5;
+    cursor:url("img/pointer.png");
+   
 }
 
 .Limited-time {
-    margin: 120px;
+    margin-top: 100px;
+    margin-bottom: 52px;
     text-align: center;
 }
 
 .cards_container {
-   flex-direction: row;
-   justify-content:left;
-   margin-left: 40px;
-   margin-right: auto;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 40px;
+    margin-right: auto;
 }
