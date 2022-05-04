@@ -48,34 +48,37 @@ const imgsContainer = document.querySelector(".imgs_container");
 imgsContainer.innerHTML = getImg;
 
 
-
-
-
-
-
 const cards = [
     {
         id: 1,
         title: "Home",
-        Discount: "extra 25% off",
+        extra: "extra",
+        DiscountNum: "25%",
+        off: "off",
         pictureUrl: "img/1.png",
     },
     {
         id: 2,
         title: "Jewelery",
-        Discount: "extra 25% off",
+        extra: "extra",
+        DiscountNum: "25%",
+        off: "off",
         pictureUrl: "img/2.png"
     },
     {
         id: 3,
         title: "Lifestyle",
-        Discount: "extra 25% off",
+        extra: "extra",
+        DiscountNum: "25%",
+        off: "off",
         pictureUrl: "img/3.png"
     },
     {
         id: 4,
         title: "Kids",
-        Discount: "extra 25% off",
+        extra: "extra",
+        DiscountNum: "25%",
+        off: "off",
         pictureUrl: "img/4.png"
 
     }
@@ -89,7 +92,9 @@ cards.forEach(function (card) {
         `
       <article>
         <div>
-         <h4> ${card.Discount}</h4>
+        <h6>
+        <h4>${card.extra}<spam> ${card.DiscountNum} </spam>${card.off}</h4>
+        </h6>
         <img src="${card.pictureUrl}">
         </div>
         <div>

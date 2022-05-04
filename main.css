@@ -1,6 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 body {
     background-color: #ffffff;
@@ -12,6 +10,46 @@ article {
     height: 354px;
     background-color: #f4f4f4;
     float: left;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+article:hover {
+    box-shadow: 10px 10px #f3d3d5;
+    cursor: url("img/pointer.png"), auto;
+    margin-top: -30px;
+}
+
+article h4 {
+    position: absolute;
+    margin-top: 0;
+    width: 0;
+    height: 0;
+    color: #ffffff;
+    font-size: 20px;
+   margin-left: 8px;
+   margin-right: auto;
+   font-weight: normal;
+}
+
+article h4 spam{
+ font-size: 24px;
+ font-weight: 700;
+}
+
+article h6 {
+    position: absolute;
+    margin-top: 0%;
+    width: 0;
+    height: 0;
+    border-top: 130px solid #c2252c;
+    border-right: 130px solid transparent;
+    color: #ffffff;
+    text-align: center;
+}
+
+article h3 {
+    text-align: center;
 }
 
 article:not(:last-child) {
@@ -26,7 +64,7 @@ article:nth-child(even) {
 
 article:nth-child(even) img {
     width: 237px;
-    height: 237px;
+    height: 292px;
 }
 
 article img {
@@ -126,8 +164,7 @@ secsion img {
 .shop_button:hover {
     padding: 10px;
     box-shadow: 10px 10px #f3d3d5;
-    cursor:url("img/pointer.png");
-   
+    cursor: url("img/pointer.png"), auto;
 }
 
 .Limited-time {
