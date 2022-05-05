@@ -11,13 +11,13 @@ article {
     background-color: #f4f4f4;
     float: left;
     margin-bottom: 100px;
-    position: relative;
 }
 
 article:hover {
     box-shadow: 10px 10px #f8e8e8;
     cursor: url("img/pointer.png"), auto;
     margin-top: -10px;
+    opacity: 1 !important;
 }
 
 article h4 {
@@ -31,6 +31,7 @@ article h4 {
     margin-right: auto;
     font-weight: normal;
     line-height: 20.8px;
+    z-index: 2;
 }
 
 article h4 spam {
@@ -47,7 +48,7 @@ article h6 {
     border-top: 130px solid #c2252c;
     border-right: 130px solid transparent;
     color: #ffffff;
-    text-align: center;
+    z-index: 1;
 }
 
 article h3 {
@@ -73,8 +74,13 @@ article:nth-child(even) img {
 
 article img {
     width: 410px;
-    height: 292px; 
-    
+    height: 292px;
+    object-fit: cover;
+    opacity: 50%;
+}
+
+article img:hover {
+    opacity: 1;
 }
 
 section img {
