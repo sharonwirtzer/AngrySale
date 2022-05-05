@@ -1,3 +1,4 @@
+
 const imgs = [
     {
         id: 5,
@@ -21,28 +22,6 @@ const imgs = [
         pictureUrl: "img/p3.png"
     }
 ];
-
-let getImg = ``;
-
-imgs.forEach(function (img) {
-    getImg +=
-        `
-      <secsion>
-        <div>
-        <img src="${img.pictureUrl}">
-        </div>
-        <div class="description_container" >
-        <h1> ${img.title} </h1>
-        <h2>${img.description} </h2>
-        <h3 class="img_price"> ${img.price} 
-        <img src="img/arrow.png"></h3>
-        </div>
-      </secsion>
-    `;
-});
-
-const imgsContainer = document.querySelector(".imgs_container");
-imgsContainer.innerHTML = getImg;
 
 const cards = [
     {
@@ -80,27 +59,44 @@ const cards = [
     }
 ];
 
-let getCard = ``;
+function renderCards(card) {
+    return `
+    <article>
+      <div>
+      <h6>
+      <h4>${card.extra}<spam> ${card.DiscountNum} </spam>${card.off}</h4>
+      </h6>
+      <img src="${card.pictureUrl}">
+      </div>
+      <div>
+      <h3> ${card.title}</h3>  
+      </div>
+    </article>
+  `;
+}
 
-cards.forEach(function (card) {
-    getCard +=
-        `
-      <article>
-        <div>
-        <h6>
-        <h4>${card.extra}<spam> ${card.DiscountNum} </spam>${card.off}</h4>
-        </h6>
-        <img src="${card.pictureUrl}">
-        </div>
-        <div>
-        <h3> ${card.title}</h3>  
-        </div>
-      </article>
-    `;
-});
+function renderImgs(img) {
+    return `
+  <section>
+    <div>
+    <img src="${img.pictureUrl}">
+    </div>
+    <div class="description_container" >
+    <h1> ${img.title} </h1>
+    <h2>${img.description} </h2>
+    <h3 class="img_price"> ${img.price} 
+    <img src="img/arrow.png"></h3>
+    </div>
+  </section>
 
-const cardsContainer = document.querySelector(".cards_container");
-cardsContainer.innerHTML = getCard;
+`;
+}
 
+function setContainer(id,data) {
+    const container = document.querySelector(id);
+    container.innerHTML = data.join(" ");
+}
 
-
+setContainer(".imgs_container", imgs.map(renderImgs))
+setContainer(".cards_container", cards.map(renderCards)
+)
