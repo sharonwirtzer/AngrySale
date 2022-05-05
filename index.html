@@ -13,18 +13,16 @@
 </head>
 
 <body>
-
   <main>
     <div>
-    <div class="imgs_container"></div>
-    <div class="description">
-      <h1>New products every time</h1>
-      <p>Looking for electronics, jewelry or any other type of goods?
-        We have the best deal in the market!</p>
+      <div class="imgs_container"></div>
+      <div class="description">
+        <h1>New products every time</h1>
+        <p>Looking for electronics, jewelry or any other type of goods?
+          We have the best deal in the market!</p>
         <button class="shop_button">Shop Now</button>
+      </div>
     </div>
-  </div>
-
     <h1 class="Limited-time">Limited-time deals</h1>
     <div class="cards_container"></div>
   </main>
@@ -33,16 +31,16 @@
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="slick/slick.min.js"></script>
   <script>
-
     $('.imgs_container').slick({
       dots: true,
       infinite: true,
       speed: 300,
       slidesToShow: 1,
       centerMode: true,
-      variableWidth: true
+      variableWidth: true,
+      autoplay: true,
+      autoplaySpeed: 4000,
     });
-
   </script>
 </body>
 

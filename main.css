@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
 body {
     background-color: #ffffff;
@@ -15,26 +15,28 @@ article {
 }
 
 article:hover {
-    box-shadow: 10px 10px #f3d3d5;
+    box-shadow: 10px 10px #f8e8e8;
     cursor: url("img/pointer.png"), auto;
-    margin-top: -30px;
+    margin-top: -10px;
 }
 
 article h4 {
     position: absolute;
-    margin-top: 0;
+    margin-top: 8px;
     width: 0;
     height: 0;
     color: #ffffff;
     font-size: 20px;
-   margin-left: 8px;
-   margin-right: auto;
-   font-weight: normal;
+    margin-left: 8px;
+    margin-right: auto;
+    font-weight: normal;
+    line-height: 20.8px;
 }
 
-article h4 spam{
- font-size: 24px;
- font-weight: 700;
+article h4 spam {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 20.8px;
 }
 
 article h6 {
@@ -50,6 +52,8 @@ article h6 {
 
 article h3 {
     text-align: center;
+    font-weight: 400;
+    margin-top: 10px;
 }
 
 article:not(:last-child) {
@@ -78,6 +82,7 @@ secsion img {
     width: 934px;
     height: 576px;
     position: relative;
+    object-fit: cover;
 }
 
 .description_container {
@@ -98,14 +103,15 @@ secsion img {
     margin-bottom: 0%;
     margin-top: 10px;
     font-weight: normal;
+    line-height: 39.2px;
 }
 
 .description_container h2 {
     font-size: 16px;
     margin-left: 22px;
     margin-right: auto;
-    width: 222px;
     margin-top: 0%;
+    font-weight: 400;
 }
 
 .description_container h3 {
@@ -113,6 +119,7 @@ secsion img {
     margin-right: auto;
     font-size: 20px;
     color: #c2252c;
+    font-weight: 400;
 }
 
 .description_container img {
@@ -124,7 +131,7 @@ secsion img {
 
 .description {
     background-color: #f4f4f4;
-    height: 576px;
+    height: 577px;
     width: 494px;
     opacity: 0.9;
     position: absolute;
@@ -135,18 +142,18 @@ secsion img {
 
 .description h1 {
     font-size: 56px;
-    font-family: "Poppins", sans-serif;
     margin-left: auto;
     margin-right: auto;
     width: 374px;
+    line-height: 67.2px;
 }
 
 .description p {
     font-size: 20px;
-    font-family: "Poppins", sans-serif;
     margin-left: auto;
     margin-right: auto;
     width: 374px;
+    font-weight: 400;
 }
 
 .shop_button {
@@ -159,11 +166,11 @@ secsion img {
     color: #f4f4f4;
     font-size: 20px;
     border: none;
+    font-weight: 400;
+    box-shadow: 10px 10px #f3d3d5;
 }
 
 .shop_button:hover {
-    padding: 10px;
-    box-shadow: 10px 10px #f3d3d5;
     cursor: url("img/pointer.png"), auto;
 }
 
@@ -171,6 +178,8 @@ secsion img {
     margin-top: 100px;
     margin-bottom: 52px;
     text-align: center;
+    font-size: 28px;
+    font-weight: 500;
 }
 
 .cards_container {

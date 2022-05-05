@@ -15,7 +15,7 @@
         url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
 }
 /* Arrows */
- .slick-prev,
+.slick-prev,
 .slick-next {
     font-size: 0;
     line-height: 0;
@@ -98,7 +98,7 @@
 }
 [dir="rtl"] .slick-next:before {
     content: "←";
-} 
+}
 
 /* Dots */
 .slick-dotted.slick-slider {
@@ -172,19 +172,14 @@
     font-size: 11px;
     text-align: center;
 
-   
-
-
-    color: #E8E8E8;
+    color: #e8e8e8;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before {
-    opacity: 0.75;
     color: #c2252c;
-    border: 1px solid #C2252C;
-    border-radius: 100%;
-  
-
+    border: 1px solid #d4605e;
+    border-radius: 50%;
+    font-size: 10px;
 }
